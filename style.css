@@ -1,0 +1,96 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+
+.calculator::before{
+    content: "";
+    position:absolute;
+    background: url(Calci.jpg) no-repeat center center/cover;
+    height:100vh;
+    width:100%;
+    z-index: -1;
+    opacity:1;
+    top:0px;
+    left:0px;
+    
+}
+
+.calculator{
+    background-color:beige;
+    padding:20px;
+    max-width:400px;
+    margin:0px auto;
+    border:2px solid rgba(169, 169, 169, 0.97);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin-top:100px;
+
+}
+
+#result{
+    width:100%;
+    padding:10px;
+    font-size:24px;
+    border:none;
+    box-shadow:0 2px 5px rgba(0,0,0,0.3) inset;
+    border-radius:5px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:10px;
+    margin-top:20px;
+
+}
+
+button{
+    padding:10px;
+    font-size:24px;
+    border:none;
+    box-shadow: 0 2px 5px rgba(0,0,0 ,0.3);
+    border-radius:5px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: blueviolet
+};
+
+
+
+.number,.decimal{
+    background-color:lightgray;
+    color:#333;
+}
+
+.operator{
+    background-color:#0074d9;
+    color:white;
+}
+
+
+
+.equal{
+    background-color: #01ff70;
+    /* grid-row: span 3; */
+    color:white;
+
+    
+}
+
+#clear-one{
+    background-color:lavender;
+}
+
+#clear-one:hover{
+    background-color: blueviolet;
+}
+
+.clear{
+    background-color:  #ff4136;
+}
+
+
